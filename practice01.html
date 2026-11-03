@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  }
+
+  .palette {
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+  }
+
+  .swatch {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+  }
+
+  .swatch--rose   { background-color: #E11D48; }
+  .swatch--amber  { background-color: #D97706; }
+  .swatch--teal   { background-color: #0D9488; }
+  .swatch--indigo { background-color: #4338CA; }
+  .swatch--pink   { background-color: #DB2777; }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="problem">problem</a>
+            <a href="cause">cause</a>
+            <a href="solution">solution</a>
+        </nav>
+    </header>
+    
+  <div class="palette">
+    <div class="swatch swatch--rose">#E11D48</div>
+    <div class="swatch swatch--amber">#D97706</div>
+    <div class="swatch swatch--teal">#0D9488</div>
+    <div class="swatch swatch--indigo">#4338CA</div>
+    <div class="swatch swatch--pink">#DB2777</div>
+  </div>
+
+</body>
+</html>

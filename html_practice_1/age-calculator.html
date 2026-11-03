@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Grade Calculator</h2>
+
+<input type="number" id="score" placeholder="Enter your score">
+
+<button onclick="calculate()">Check Grade</button>
+
+<p id="result"></p>
+
+<script>
+function calculate() {
+    let score = Number(document.getElementById("score").value);
+
+    if (score >= 90) {
+        document.getElementById("result").innerHTML = "Grade A";
+    } 
+    else if (score >= 80) {
+        document.getElementById("result").innerHTML = "Grade B";
+    } 
+    else if (score >= 70) {
+        document.getElementById("result").innerHTML = "Grade C";
+    } 
+    else {
+        document.getElementById("result").innerHTML = "Grade F";
+    }
+}
+</script>
+
+</body>
+</html>
